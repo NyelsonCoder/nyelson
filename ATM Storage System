@@ -1,0 +1,27 @@
+
+
+deposit_amount=0
+withdraw_amount=0
+yeet=input("Would you like to use your bank account -yes/no-?")
+starting_balance=input("What is you starting balance")
+starting_balance=int(starting_balance)
+while yeet == "yes":
+  choose=input("Would you like to withdraw or deposit? -deposit/withdraw-?")
+  if choose == "deposit":
+    money=input("How much money would you like to deposit?")
+    money=int(money)
+    deposit_amount=deposit_amount+1
+    starting_balance=starting_balance+money
+  elif choose == "withdraw":
+    money2=input("How much money would you like to withdraw?")
+    money2=int(money2)
+    withdraw_amount=withdraw_amount+1
+    starting_balance=starting_balance-money2
+  print("Your balance is " + str(starting_balance))
+  print("You withdrawal count is " + str(withdraw_amount))
+  print("Your deposit count is " + str(deposit_amount))
+  yeet=input('Would you like to use your bank account again -yes/no-?')
+    
+
+
+    
